@@ -90,3 +90,14 @@ button.operator:hover {
 .close-btn:hover {
     background-color: #e60000;
 }
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
