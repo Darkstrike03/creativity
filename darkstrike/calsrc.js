@@ -2,7 +2,9 @@
 // JavaScript Functionality
 const display = document.getElementById("display");
 const popup = document.getElementById("popup");
-
+function goBack(){
+    window.history.back();
+}
 // Append value to the display
 function appendToDisplay(value) {
     if (display.innerText === "0") {
