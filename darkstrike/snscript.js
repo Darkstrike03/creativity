@@ -1,6 +1,8 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
-
+function goBack(){
+    window.history.back();
+}
 // Game Variables
 const box = 20; // Size of each grid box
 let snake = [{ x: 9 * box, y: 10 * box }];
