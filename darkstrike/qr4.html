@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="fa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="fa/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="fa/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>QR Code Maker</title>
+    <link rel="stylesheet" href="qrcs4.css">
+</head>
+<body>
+    <header>
+        <h1>Quick-QR</h1>
+        <img src="../assets/qr.png" alt="Website Logo">
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" onclick="switchTab('text')">Text</div>
+            <div class="tab" onclick="switchTab('url')">URL</div>
+            <div class="tab" onclick="switchTab('wifi')">Wi-Fi</div>
+            <div class="tab" onclick="switchTab('email')">Email</div>
+        </div>
+
+        <div class="content">
+            <div class="input-group">
+                <label for="input">Enter Your Text:</label>
+                <textarea id="input" rows="4" placeholder="Type something..."></textarea>
+            </div>
+
+            <div class="buttons">
+                <button onclick="generateQRCode()">Generate QR Code</button>
+            </div>
+
+            <div class="qr-preview">
+                <canvas id="qrCanvas"></canvas>
+            </div>
+
+            <div class="buttons">
+                <button onclick="downloadQRCode('png')">Download PNG</button>
+                <button onclick="downloadQRCode('svg')">Download SVG</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="../assets/Arcadia-logo.png" alt="Footer Logo">
+        &copy; 2024 Arcadia. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="qrjaas4.js">
+    </script>
+</body>
+</html>
