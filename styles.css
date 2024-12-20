@@ -214,10 +214,10 @@ footer {
     color: #faf0f0;
 }
 .dark-mode header{
-   background-color: #6200ea00; 
+   background-color: #6200ea7d; 
 }
 .dark-mode footer{
-    background-color: #6200ea00;
+    background-color: #6200ea7c;
 }
 .dark-mode .tabs{
     background-color: #dddddd82;
