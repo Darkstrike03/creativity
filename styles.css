@@ -207,7 +207,21 @@ footer {
 .footer-links ul li a:hover {
     text-decoration: underline;
 }
-
+.dark-mode .card{
+    background-color: #323232;
+}
+.dark-mode .card-content h3{
+    color: #faf0f0;
+}
+.dark-mode header{
+   background-color: #6200ea00; 
+}
+.dark-mode footer{
+    background-color: #6200ea00;
+}
+.dark-mode .tabs{
+    background-color: #dddddd82;
+}
 
 @media (max-width: 600px) {
     .tab {
