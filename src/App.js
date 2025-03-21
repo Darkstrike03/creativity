@@ -18,6 +18,8 @@ function App() {
         <Navbar />
         <Divider />
         <Routes>
+          {/* Default route for the root path */}
+          <Route path="/" element={<Tools />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/games" element={<Games />} />
           <Route path="/others" element={<Others />} />
